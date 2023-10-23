@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid Tracker</title>
+    <title>Covid Tracker</title>    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,15 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main container rounded position-absolute top-50 start-50 translate-middle text-center py-3">
-        <h1>COVID-19 TRACKER</h1>
-        <form class="needs-validation" onsubmit="displayInput(event)" id="myForm">
-                <input type="text" id="country" class="input rounded-3" required>
-                <button type="submit" class="btn btn-primary rounded-3">Get Data</button>
-                <div id="invalid" style="color: red !important;"></div>
-        </form>
+    <div class="main container rounded text-center py-3">
+        <div> 
+            <h1>COVID-19 TRACKER</h1>
+            <form class="needs-validation" onsubmit="displayInput(event)" id="myForm">
+                    <input type="text" id="country" class="input rounded-3" required>
+                    <button type="submit" class="btn btn-primary rounded-3">Get Data</button>
+                    <div id="invalid" style="color: red !important;"></div>
+            </form>
+        </div>  
         <div class="container-fluid">
-            <div class="row row-cols-3 g-4 m-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-3">
                 <div class="col">
                     <div class="card shadow-lg rounded">
                         <img src="styles/icons/medical-result_2804606.png" alt="Active Cases" class="card-img-top">

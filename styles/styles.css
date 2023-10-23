@@ -10,6 +10,8 @@ body{
 .main{
     background-color: rgb(23, 107, 135);
     box-shadow: 0px 0px 40px 20px rgb(238, 238, 238);
+    margin-top: 50pt;
+    margin-bottom: 50pt; 
 }
 
 .card{
