@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main container rounded position-absolute top-50 start-50 translate-middle text-center py-3">
+        <h1>COVID-19 TRACKER</h1>
+        <form class="needs-validation" onsubmit="displayInput(event)" id="myForm">
+                <input type="text" id="country" class="input rounded-3" required>
+                <button type="submit" class="btn btn-primary rounded-3">Get Data</button>
+                <div id="invalid" style="color: red !important;"></div>
+        </form>
+        <div class="container-fluid">
+            <div class="row row-cols-3 g-4 m-3">
+                <div class="col">
+                    <div class="card shadow-lg rounded">
+                        <img src="styles/icons/medical-result_2804606.png" alt="Active Cases" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Active Cases</h2>
+                            <p id="activeCases" class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg rounded">
+                        <img src="styles/icons/magnifying_2804651.png" alt="New Cases" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">New Cases</h2>
+                            <p id="newCases" class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg rounded">
+                        <img src="styles/icons/serum_2804644.png" alt="Recovered Cases" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Recovered Cases</h2>
+                            <p id="recoveredCases" class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg rounded">
+                        <img src="styles/icons/medical-history_2804594.png" alt="Total Cases" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Total Cases</h2>
+                            <p id="totalCases" class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg rounded">
+                        <img src="styles/icons/death-certificate_5775256.png" alt="Total Deaths" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Total Deaths</h2>
+                            <p id="totalDeaths" class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg rounded">
+                        <img src="styles/icons/heart-rate-monitor_2804657.png" alt="Total Tests" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Total Tests</h2>
+                            <p id="totalTests" class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
